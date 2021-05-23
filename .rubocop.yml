@@ -1,0 +1,14 @@
+AllCops:
+  NewCops: enable
+  
+  Exclude:
+    - 'node_modules/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics:
+  Enabled: false

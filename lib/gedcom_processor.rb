@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module GedcomProcessor
   autoload :Processor, 'gedcom_processor/processor'
   autoload :Parser, 'gedcom_processor/parser'

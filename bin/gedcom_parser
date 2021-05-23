@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require 'gedcom_processor'
 
 if ARGV.length == 2
@@ -7,8 +9,8 @@ if ARGV.length == 2
     processor = GedcomProcessor::Processor.new $stdout
     processor.process(ARGV[1])
   else
-    puts "Usage: gedcom_parser [-f file]"
+    puts 'Usage: gedcom_parser [-f file]'
   end
 else
-  puts "Usage: gedcom_parser [-f file]"
+  puts 'Usage: gedcom_parser [-f file]'
 end
